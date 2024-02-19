@@ -7,6 +7,6 @@ yarn-error.log*
 node_modules/
 
 # build output
-dist
+#dist
 
 .idea/

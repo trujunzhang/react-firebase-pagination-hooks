@@ -1,4 +1,4 @@
-import { firestore } from "firebase";
+import firestore from "firebase/firestore";
 
 const findIndexOfDocument = (
   doc: firestore.QueryDocumentSnapshot,

@@ -1,4 +1,4 @@
-import { firestore } from "firebase";
+import firestore from "firebase/firestore";
 import * as React from "react";
 import { addItem, deleteItem, updateItem } from "./operation";
 

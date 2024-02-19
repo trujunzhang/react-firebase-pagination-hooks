@@ -1,1 +1,3 @@
-export { usePagination, usePaginationData } from "./usePagination";
+import { usePagination, usePaginationData } from "./usePagination";
+
+export { usePagination, usePaginationData };

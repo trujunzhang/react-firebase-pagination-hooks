@@ -1,6 +1,6 @@
 {
   "name": "react-firebase-pagination-hooks",
-  "version": "2.0.1",
+  "version": "3.0.1",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "files": [
@@ -16,10 +16,9 @@
     "build": "yarn build:cjs && yarn build:es",
     "pre-release": "yarn clean && yarn build"
   },
-  "dependencies": {},
   "devDependencies": {
     "@types/react": "^18.2.56",
-    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.0.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.56.0",
@@ -32,24 +31,18 @@
     "firebase": "^10.8.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
+    "react": "18.3.1",
     "rimraf": "^5.0.5",
-    "typescript": "^5.3.3",
-    "react": "18.2.0"
+    "typescript": "^5.3.3"
   },
   "peerDependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.1.0"
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "lint-staged": {
     "src/**/*.ts": [
       "eslint --fix",
       "git add"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "yarn lint && yarn clean && yarn build"
-    }
   }
 }
